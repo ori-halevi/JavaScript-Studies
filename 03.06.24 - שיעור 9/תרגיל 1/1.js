@@ -1,0 +1,7 @@
+const firstBox = document.getElementById("first-box")
+const secondBox = document.getElementById("second-box")
+const thirdBox = document.getElementById("third-box")
+firstBox.addEventListener("click",()=> window.alert("this is an alert"))
+secondBox.addEventListener("mouseenter", ()=> secondBox.textContent = "get out! 👿")
+secondBox.addEventListener("mouseleave", ()=> secondBox.textContent = "come in! 😍")
+thirdBox.addEventListener("mouseleave", ()=> secondBox.style.backgroundColor ="red" )

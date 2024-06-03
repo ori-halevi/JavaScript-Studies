@@ -1,0 +1,111 @@
+div {
+  border: 2px rgb(230, 0, 255) solid;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.head-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 1000px;
+}
+.clock-frame-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px orange solid;
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+}
+.the-second-dots-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px darkslategrey dotted;
+  height: 480px;
+  width: 480px;
+  border-radius: 100%;
+}
+.first-floor {
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reset-button {
+  border-radius: 20rem;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 120px;
+}
+
+.second-floor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 450px;
+}
+.hours-div {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 120px;
+}
+
+.colon-div {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 15px;
+}
+
+.minutes-div {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 120px;
+}
+.seconds-div {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 120px;
+}
+
+.third-floor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+}
+
+.start-stop-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20rem;
+  font-size: 40px;
+  height: 60px;
+  width: 120px;
+}

@@ -1,0 +1,31 @@
+#first-box {
+  background-color: yellow;
+  height: 150px;
+  width: 150px;
+  border: 5px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-box {
+  background-color: green;
+  height: 150px;
+  width: 150px;
+  border: 5px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#third-box {
+  font-size: 30px;
+  background-color: blue;
+  height: 150px;
+  width: 150px;
+  border: 5px solid;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
