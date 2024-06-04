@@ -1,5 +1,5 @@
 div {
-  border: 2px rgb(230, 0, 255) solid;
+  /* border: 2px rgb(230, 0, 255) solid; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -89,6 +89,10 @@ div {
   align-items: center;
   height: 100px;
   width: 120px;
+}
+
+.running-color {
+  color: black;
 }
 
 .third-floor {
