@@ -36,7 +36,7 @@ div {
   width: 100px;
 }
 .day-of-the-week-div {
-  font-size: 80px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
