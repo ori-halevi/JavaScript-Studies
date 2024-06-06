@@ -1,5 +1,4 @@
-
-
+// code yuck
 async function readFile(name) {
   try {
     const getInfoResult = await fetch(
@@ -11,10 +10,24 @@ async function readFile(name) {
     } else {
       throw new Error("There is not such a person in our website!");
     }
-
   } catch (error) {
     console.error("Error reading file:", error);
+    setTimeout(() => {
+      document.getElementById("nameInput").value = "";
+    }, 3000);
   }
 }
 
-readFile("Bret");
+const submitNameButton = document.getElementById("submitNameButton");
+submitNameButton.addEventListener("click", () => {
+  runLookup();
+});
+
+async function runLookup() {
+  let name = await getNameFromInput();
+  readFile(name);
+}
+
+function getNameFromInput() {
+  return document.getElementById("nameInput").value;
+}
