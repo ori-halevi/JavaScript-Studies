@@ -619,6 +619,5 @@ function compareFn(a, b) {
   // a must be equal to b
   return 0;
 }
-
-sortedArr = arr.sort();
+sortedArr = arr.sort((a, b) => a.title.localeCompare(b.title));
 console.log(sortedArr);
