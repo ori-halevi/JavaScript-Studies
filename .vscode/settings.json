@@ -1,7 +1,7 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 0,
-    "editor.fontSize": 19,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 0,
+  "editor.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

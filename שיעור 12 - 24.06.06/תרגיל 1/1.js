@@ -4,12 +4,17 @@ async function readFile(name) {
     const getInfoResult = await fetch(
       `https://jsonplaceholder.typicode.com/users/?username=${name}`
     );
+    if(!getInfoResult.ok){
+      throw new Error("This Info doesn't exsist in our website, check your URL.")
+    }
+
     const asJSON = await getInfoResult.json();
     if (asJSON.length !== 0) {
       console.log(asJSON);
     } else {
       throw new Error("There is not such a person in our website!");
     }
+    
   } catch (error) {
     console.error("Error reading file:", error);
     setTimeout(() => {
