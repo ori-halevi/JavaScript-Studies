@@ -8,18 +8,37 @@ app.get("/", (req, res) => {
   getPage(res, "smartserver");
 });
 
-app.get("/primes/:id", (req, res) => {
+app.get("/primes/:n", (req, res) => {
   let arr = [];
-  const id = req.params.id;
-  for (let i = 0; i < id; i++) {
+  const n = req.params.n;
+  for (let i = 0; i < n; i++) {
     if (is_div2(i)) {
       arr.push(i);
     }
   }
   let stra = String(arr);
   let arrAsStr = String(arr);
-  res.send(arrAsStr)
+  res.send(arrAsStr);
 });
+
+app.get("/factorial/:f", async (req, res) => {
+    let f = req.params.f;
+    try {
+        let result = await factorial(f);
+        res.send(`Factorial of ${f} is ${result}`);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send("Error calculating factorial");
+    }
+});
+
+async function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * await factorial(n - 1);
+    }
+}
 
 function is_div(num, div) {
   if (div === 1) {
